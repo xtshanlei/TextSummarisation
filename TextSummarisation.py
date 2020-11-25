@@ -1,16 +1,5 @@
 import streamlit as st
 from transformers import pipeline
-import wikipediaapi
-keyword = st.text('Anything you want to look up?')
-if not keyword:
-    st.stop()
-wiki_wiki = wikipediaapi.Wikipedia('en')
-page_py = wiki_wiki.page(keyword)
-if page_py.exists()==False:
-    st.stop()
-st.write(page_py)
-
-
 summarizer = pipeline("summarization")
 
 st.title('Text Summarisation by Yulei')
