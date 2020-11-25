@@ -1,4 +1,4 @@
 transformers==3.5.1
 streamlit==0.71.0
 Tensorflow==2.3.0
-wikipediaapi==0.5.4
+Wikipedia-API==0.5.4
