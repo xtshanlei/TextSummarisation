@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import pipeline
+summarizer = pipeline("summarization")
 
 st.title('Text Summarisation by Yulei')
 text = st.text_area('Please type the texts you want to summarise here.')
