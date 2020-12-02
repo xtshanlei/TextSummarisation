@@ -11,6 +11,6 @@ summary = summarizer(text[:1024], max_length=120, min_length=30, do_sample=False
 st.header('Please see your summarisation below:')
 st.write(summary[0]['summary_text'])
 
-from deep_translator import DeepL
-translated = DeepL(source='auto', target='ch').translate(summary[0]['summary_text'])
+from deep_translator import GoogleTranslator
+translated = GoogleTranslator(source='auto', target='ch').translate(summary[0]['summary_text'])
 st.write(translated)
