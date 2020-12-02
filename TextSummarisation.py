@@ -12,4 +12,4 @@ st.write(summary[0]['summary_text'])
 
 from deep_translator import GoogleTranslator
 translated = GoogleTranslator(source='auto', target='de').translate("keep it up, you are awesome")
- 
+st.write(translated)
