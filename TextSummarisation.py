@@ -1,18 +1,6 @@
 import streamlit as st
 from transformers import pipeline
 
-sentence = 'I like turtles.'
-from_language = 'EN'
-to_language = 'ES'
-
-translation = pydeepl.translate(sentence, to_language, from_lang=from_language)
-print(translation)
-
-# Using auto-detection
-translation = pydeepl.translate(sentence, to_language)
-print(translation)
-summarizer = pipeline("summarization")
-
 st.title('Text Summarisation by Yulei')
 text = st.text_area('Please type the texts you want to summarise here.')
 if not text:
@@ -24,3 +12,4 @@ st.write(summary[0]['summary_text'])
 
 from deep_translator import GoogleTranslator
 translated = GoogleTranslator(source='auto', target='de').translate("keep it up, you are awesome")
+ 
