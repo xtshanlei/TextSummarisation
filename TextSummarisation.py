@@ -27,4 +27,4 @@ sentence = 'I like turtles.'
 to_language = 'CH'
 
 translation = pydeepl.translate(sentence, to_language)
-print(translation)
+st.write(translation)
