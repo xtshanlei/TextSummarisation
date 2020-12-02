@@ -12,5 +12,5 @@ st.header('Please see your summarisation below:')
 st.write(summary[0]['summary_text'])
 
 from deep_translator import GoogleTranslator
-translated = GoogleTranslator(source='auto', target='zh-CN').translate(summary[0]['summary_text'])
+translated = GoogleTranslator(source='auto', target='zh').translate(summary[0]['summary_text'])
 st.write(translated)
