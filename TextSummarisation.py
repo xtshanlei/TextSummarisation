@@ -1,6 +1,5 @@
 import streamlit as st
 from transformers import pipeline
-import pydeepl
 
 sentence = 'I like turtles.'
 from_language = 'EN'
