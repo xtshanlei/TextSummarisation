@@ -23,8 +23,5 @@ summary = summarizer(text[:1024], max_length=120, min_length=30, do_sample=False
 st.header('Please see your summarisation below:')
 st.write(summary[0]['summary_text'])
 
-sentence = 'I like turtles.'
-to_language = 'CH'
-
-translation = pydeepl.translate(sentence, to_language)
-st.write(translation)
+from deep_translator import GoogleTranslator
+translated = GoogleTranslator(source='auto', target='de').translate("keep it up, you are awesome")
